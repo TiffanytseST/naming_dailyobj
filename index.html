@@ -193,7 +193,7 @@
         function handleCorrectAnswer(w){
             currentCueLevel=0; correctAnswered=false;
             messageElement.textContent=w;
-            const fb=["啱喇","冇錯","做得好"][Math.floor(Math.random()*3)]+`！呢個就係${w}。`;
+            const fb=["啱喇","冇錯","做得好"][Math.floor(Math.random()*3)]+`！呢個就係${w}`;
             speak(fb,()=>setTimeout(moveToNextQuestion,800));
         }
 
@@ -260,4 +260,5 @@
         document.addEventListener('DOMContentLoaded',updateProgress);
     </script>
 </body>
+
 </html>
